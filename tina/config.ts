@@ -63,26 +63,8 @@ export default defineConfig({
           },
           {
             type: "string",
-            name: "category",
-            label: "Category",
-            list: true,
-          },
-
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body Content",
-            isBody: true,
-          },
-          {
-            type: "string",
             name: "permalink",
             label: "Permalink",
-          },
-          {
-            type: "string",
-            name: "status",
-            label: "Status",
           },
           {
             type: "string",
@@ -90,25 +72,168 @@ export default defineConfig({
             label: "Excerpt",
           },
           {
-            type: "string",
-            name: "type",
-            label: "Type",
+            type: "number",
+            name: "id",
+            label: "WordPress ID",
           },
           {
             type: "string",
-            name: "tag",
-            label: "Tag",
+            name: "type",
+            label: "Post Type",
+          },
+
+          {
+            type: "string",
+            name: "status",
+            label: "Status",
             list: true,
           },
+
+          {
+            type: "string",
+            name: "category",
+            label: "Categories",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "tag",
+            label: "Tags",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "post_format",
+            label: "Post Format",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "onesignal_meta_box_present",
+            label: "OneSignal Meta Box",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "onesignal_send_notification",
+            label: "OneSignal Send Notification",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "onesignal_modify_title_and_content",
+            label: "Modify Title & Content",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "onesignal_notification_custom_heading",
+            label: "Notification Heading",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "onesignal_notification_custom_content",
+            label: "Notification Content",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "dpsp_networks_shares",
+            label: "DPSP Networks Shares",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "dpsp_networks_shares_total",
+            label: "DPSP Shares Total",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "dpsp_networks_shares_last_updated",
+            label: "DPSP Shares Last Updated",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "dpsp_cache_shares_twitter_2",
+            label: "Twitter Share Cache",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "response_body",
+            label: "Response Body",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "rank_math_primary_category",
+            label: "Rank Math Primary Category",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "rank_math_title",
+            label: "Rank Math SEO Title",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "rank_math_description",
+            label: "Rank Math SEO Description",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "rank_math_canonical_url",
+            label: "Canonical URL",
+            list: true,
+          },
+
+          {
+            type: "string",
+            name: "rank_math_news_sitemap_robots",
+            label: "News Sitemap Robots",
+            list: true,
+          },
+
           {
             type: "string",
             name: "rank_math_robots",
             label: "Robots",
+            list: true,
           },
+
           {
             type: "string",
-            name: "rank_math_description",
-            label: "SEO Description",
+            name: "rank_math_internal_links_processed",
+            label: "Internal Links Processed",
+            list: true,
+          },
+
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
           },
         ],
       },
