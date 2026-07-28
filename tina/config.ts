@@ -32,43 +32,49 @@ export default defineConfig({
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
- schema: {
-  collections: [
-    {
-      name: "post",
-      label: "Posts",
-      path: "content/posts",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          isTitle: true,
-          required: true,
-        },
-        {
-          type: "string",
-          name: "author",
-          label: "Author",
-        },
-        {
-          type: "datetime",
-          name: "date",
-          label: "Date",
-        },
-        {
-          type: "image",
-          name: "thumbnail",
-          label: "Thumbnail Image",
-        },
-        {
-          type: "rich-text",
-          name: "body",
-          label: "Body Content",
-          isBody: true,
-        },
-      ],
-    },
-  ],
-},
+  schema: {
+    collections: [
+      {
+        name: "post",
+        label: "Posts",
+        path: "content/posts",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author",
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },
+          {
+            type: "image",
+            name: "thumbnail",
+            label: "Thumbnail Image",
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Categories",
+            list: true, // Set to true since it's an array/list in your markdown
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body Content",
+            isBody: true,
+          },
+        ],
+      },
+    ],
+  },
 });
