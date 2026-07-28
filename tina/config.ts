@@ -73,7 +73,7 @@ export default defineConfig({
           },
           {
             type: "number",
-            name: "id",
+            name: "wpId",
             label: "WordPress ID",
           },
           {
