@@ -61,7 +61,13 @@ export default defineConfig({
             name: "thumbnail",
             label: "Thumbnail Image",
           },
-          
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            list: true,
+          },
+
           {
             type: "rich-text",
             name: "body",
