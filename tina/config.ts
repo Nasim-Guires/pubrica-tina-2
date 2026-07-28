@@ -61,12 +61,7 @@ export default defineConfig({
             name: "thumbnail",
             label: "Thumbnail Image",
           },
-          {
-            type: "string",
-            name: "category",
-            label: "Categories",
-            list: true, // Set to true since it's an array/list in your markdown
-          },
+          
           {
             type: "rich-text",
             name: "body",
