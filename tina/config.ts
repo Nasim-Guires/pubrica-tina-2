@@ -74,6 +74,42 @@ export default defineConfig({
             label: "Body Content",
             isBody: true,
           },
+          {
+            type: "string",
+            name: "permalink",
+            label: "Permalink",
+          },
+          {
+            type: "string",
+            name: "status",
+            label: "Status",
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Type",
+          },
+          {
+            type: "string",
+            name: "tag",
+            label: "Tag",
+            list: true,
+          },
+          {
+            type: "string",
+            name: "rank_math_robots",
+            label: "Robots",
+          },
+          {
+            type: "string",
+            name: "rank_math_description",
+            label: "SEO Description",
+          },
         ],
       },
     ],
