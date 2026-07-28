@@ -82,11 +82,11 @@ export default defineConfig({
             label: "Post Type",
           },
 
-          {
-            type: "string",
-            name: "status",
-            label: "Status",
-          },
+          // {
+          //   type: "string",
+          //   name: "status",
+          //   label: "Status",
+          // },
 
           {
             type: "string",

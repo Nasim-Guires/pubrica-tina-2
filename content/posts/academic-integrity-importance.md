@@ -1,6 +1,6 @@
 ---
 status:
-  - '200'
+   '200'
 permalink: /academic-integrity-importance
 excerpt: ''
 type: post
