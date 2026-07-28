@@ -86,7 +86,6 @@ export default defineConfig({
             type: "string",
             name: "status",
             label: "Status",
-            list: true,
           },
 
           {
