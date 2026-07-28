@@ -58,21 +58,23 @@ export default async function BlogPostPage(props: {
           flexWrap: "wrap",
         }}
       >
-        {post.category?.map((cat: string, index: number) => (
-          <span
-            key={index}
-            style={{
-              backgroundColor: "#eef2ff",
-              color: "#4f46e5",
-              padding: "4px 10px",
-              borderRadius: "12px",
-              fontSize: "12px",
-              fontWeight: "600",
-            }}
-          >
-            {cat}
-          </span>
-        ))}
+        {post.category
+          ?.filter((cat): cat is string => cat !== null)
+          .map((cat, index) => (
+            <span
+              key={index}
+              style={{
+                backgroundColor: "#eef2ff",
+                color: "#4f46e5",
+                padding: "4px 10px",
+                borderRadius: "12px",
+                fontSize: "12px",
+                fontWeight: "600",
+              }}
+            >
+              {cat}
+            </span>
+          ))}
       </div>
 
       {/* Title */}
