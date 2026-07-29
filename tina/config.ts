@@ -227,7 +227,79 @@ export default defineConfig({
             label: "Internal Links Processed",
             list: true,
           },
+{
+  type: "image",
+  name: "featuredImage",
+  label: "Featured Image",
+},
 
+{
+  type: "string",
+  name: "slug",
+  label: "Slug",
+},
+
+{
+  type: "string",
+  name: "metaTitle",
+  label: "SEO Title",
+},
+
+{
+  type: "string",
+  name: "metaDescription",
+  label: "SEO Description",
+  textarea: true,
+},
+
+{
+  type: "string",
+  name: "focusKeyword",
+  label: "Focus Keyword",
+},
+
+{
+  type: "string",
+  name: "keywords",
+  label: "Meta Keywords",
+  list: true,
+},
+
+{
+  type: "string",
+  name: "canonicalUrl",
+  label: "Canonical URL",
+},
+
+{
+  type: "string",
+  name: "robots",
+  label: "Robots",
+},
+
+{
+  type: "image",
+  name: "ogImage",
+  label: "Open Graph Image",
+},
+
+{
+  type: "string",
+  name: "ogTitle",
+  label: "OG Title",
+},
+
+{
+  type: "string",
+  name: "ogDescription",
+  label: "OG Description",
+},
+
+{
+  type: "string",
+  name: "schemaType",
+  label: "Schema Type",
+},
           {
             type: "rich-text",
             name: "body",
