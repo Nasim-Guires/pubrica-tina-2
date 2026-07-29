@@ -25,12 +25,13 @@ export default defineConfig({
   // server: {
   //   allowedOrigins: ['https://your-codespace.github.dev'],
   // },
-  media: {
-    tina: {
-      mediaRoot: "",
-      publicFolder: "public",
-    },
+media: {
+  tina: {
+    mediaRoot: "images",
+    publicFolder: "public",
   },
+},
+
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
     collections: [
@@ -56,11 +57,7 @@ export default defineConfig({
             name: "date",
             label: "Date",
           },
-          {
-            type: "image",
-            name: "thumbnail",
-            label: "Thumbnail Image",
-          },
+     
           {
             type: "string",
             name: "permalink",
@@ -88,19 +85,19 @@ export default defineConfig({
           //   label: "Status",
           // },
 
-          {
-            type: "string",
-            name: "category",
-            label: "Categories",
-            list: true,
-          },
+      {
+ type:"string",
+ name:"category",
+ label:"Categories",
+ list:true,
+},
 
-          {
-            type: "string",
-            name: "tag",
-            label: "Tags",
-            list: true,
-          },
+        {
+ type:"string",
+ name:"tag",
+ label:"Tags",
+ list:true,
+},
 
           {
             type: "string",
@@ -109,68 +106,7 @@ export default defineConfig({
             list: true,
           },
 
-          {
-            type: "string",
-            name: "onesignal_meta_box_present",
-            label: "OneSignal Meta Box",
-            list: true,
-          },
 
-          {
-            type: "string",
-            name: "onesignal_send_notification",
-            label: "OneSignal Send Notification",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "onesignal_modify_title_and_content",
-            label: "Modify Title & Content",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "onesignal_notification_custom_heading",
-            label: "Notification Heading",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "onesignal_notification_custom_content",
-            label: "Notification Content",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "dpsp_networks_shares",
-            label: "DPSP Networks Shares",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "dpsp_networks_shares_total",
-            label: "DPSP Shares Total",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "dpsp_networks_shares_last_updated",
-            label: "DPSP Shares Last Updated",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "dpsp_cache_shares_twitter_2",
-            label: "Twitter Share Cache",
-            list: true,
-          },
 
           {
             type: "string",
@@ -186,47 +122,7 @@ export default defineConfig({
             list: true,
           },
 
-          {
-            type: "string",
-            name: "rank_math_title",
-            label: "Rank Math SEO Title",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "rank_math_description",
-            label: "Rank Math SEO Description",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "rank_math_canonical_url",
-            label: "Canonical URL",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "rank_math_news_sitemap_robots",
-            label: "News Sitemap Robots",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "rank_math_robots",
-            label: "Robots",
-            list: true,
-          },
-
-          {
-            type: "string",
-            name: "rank_math_internal_links_processed",
-            label: "Internal Links Processed",
-            list: true,
-          },
+          
 {
   type: "image",
   name: "featuredImage",
@@ -301,11 +197,23 @@ export default defineConfig({
   label: "Schema Type",
 },
           {
+ type:"string",
+ name:"status",
+ label:"Status",
+ options:[
+   "publish",
+   "draft",
+ ],
+},
+
+
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
           },
+          
         ],
       },
     ],
